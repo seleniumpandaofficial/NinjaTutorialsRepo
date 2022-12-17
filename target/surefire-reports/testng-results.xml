@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="20161" started-at="2022-12-10T19:49:52Z" finished-at="2022-12-10T19:50:12Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="20161" started-at="2022-12-10T19:49:52Z" finished-at="2022-12-10T19:50:12Z">
+      <class name="com.qa.ninjatutorials.testcases.SearchTest">
+        <test-method status="PASS" signature="startup()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@6c49835d]" name="startup" is-config="true" duration-ms="3970" started-at="2022-12-10T19:50:07Z" finished-at="2022-12-10T19:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method status="PASS" signature="verifySearchWithValidProduct()[pri:1, instance:com.qa.ninjatutorials.testcases.SearchTest@6c49835d]" name="verifySearchWithValidProduct" duration-ms="767" started-at="2022-12-10T19:50:11Z" finished-at="2022-12-10T19:50:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchWithValidProduct -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.SearchTest@6c49835d]" name="tearDown" is-config="true" duration-ms="630" started-at="2022-12-10T19:50:11Z" finished-at="2022-12-10T19:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.ninjatutorials.testcases.SearchTest -->
+      <class name="com.qa.ninjatutorials.testcases.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.ninjatutorials.testcases.LoginTest@9660f4e]" name="setup" is-config="true" duration-ms="6595" started-at="2022-12-10T19:49:52Z" finished-at="2022-12-10T19:49:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyLoginWithValidCredentials()[pri:1, instance:com.qa.ninjatutorials.testcases.LoginTest@9660f4e]" name="verifyLoginWithValidCredentials" duration-ms="925" started-at="2022-12-10T19:49:58Z" finished-at="2022-12-10T19:49:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.LoginTest@9660f4e]" name="tearDown" is-config="true" duration-ms="625" started-at="2022-12-10T19:49:59Z" finished-at="2022-12-10T19:50:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.ninjatutorials.testcases.LoginTest -->
+      <class name="com.qa.ninjatutorials.testcases.RegisterTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@5a8806ef]" name="setup" is-config="true" duration-ms="4691" started-at="2022-12-10T19:50:00Z" finished-at="2022-12-10T19:50:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyRegistrationWithMandatoryFields()[pri:1, instance:com.qa.ninjatutorials.testcases.RegisterTest@5a8806ef]" name="verifyRegistrationWithMandatoryFields" duration-ms="1320" started-at="2022-12-10T19:50:05Z" finished-at="2022-12-10T19:50:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistrationWithMandatoryFields -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.ninjatutorials.testcases.RegisterTest@5a8806ef]" name="tearDown" is-config="true" duration-ms="614" started-at="2022-12-10T19:50:06Z" finished-at="2022-12-10T19:50:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.ninjatutorials.testcases.RegisterTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

@@ -1,0 +1,5 @@
+com\qa\ninjatutorials\base\TestBase.class
+com\qa\ninjatutorials\testcases\LoginTest.class
+showDateTimeStampCode\DateTimeStamp.class
+com\qa\ninjatutorials\testcases\SearchTest.class
+com\qa\ninjatutorials\testcases\RegisterTest.class

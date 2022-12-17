@@ -44,8 +44,8 @@ public class RegisterTest extends TestBase{
 		driver.findElement(By.id("input-lastname")).sendKeys("Panda1");
 		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateDateTimeStamp());
 		driver.findElement(By.id("input-telephone")).sendKeys("9876543210");
-		driver.findElement(By.id("input-password")).sendKeys("Selenium@1234");
-		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@1234");
+		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
+		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
 		driver.findElement(By.xpath("//input[@name = 'newsletter'][@value = '1']")).click();
 		driver.findElement(By.name("agree")).click();
 		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
@@ -53,7 +53,23 @@ public class RegisterTest extends TestBase{
 		Assert.assertEquals(actualHeading, "Your Account Has Been Created!", "Account Success message did not display");
 	}
 	
+	
 	@Test(priority = 3)
+	public void verifyRegistrationWithExistingEmailID() {
+		driver.findElement(By.id("input-firstname")).sendKeys("Selenium1");
+		driver.findElement(By.id("input-lastname")).sendKeys("Panda1");
+		driver.findElement(By.id("input-email")).sendKeys(prop.getProperty("validEmail"));
+		driver.findElement(By.id("input-telephone")).sendKeys("9876543210");
+		driver.findElement(By.id("input-password")).sendKeys("Selenium@123");
+		driver.findElement(By.id("input-confirm")).sendKeys("Selenium@123");
+		driver.findElement(By.xpath("//input[@name = 'newsletter'][@value = '1']")).click();
+		driver.findElement(By.name("agree")).click();
+		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
+		String actualWarning = driver.findElement(By.xpath("//div[contains(@class, 'alert-dismissible')]")).getText();
+	    Assert.assertEquals(actualWarning, "Warning: E-Mail Address is already registered!", "Duplicate Email warning did not display");
+	}
+	
+	@Test(priority = 4)
 	public void verifyRegistrationWithoutFillingAnyDetails() {
 		driver.findElement(By.cssSelector("input.btn.btn-primary")).click();
 		

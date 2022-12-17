@@ -5,13 +5,9 @@
     <classes>
       <class name="com.qa.ninjatutorials.testcases.LoginTest">
         <methods>
-          <include name="verifyLoginWithInValidCredentials"/>
           <include name="setup"/>
-          <include name="verifyLoginWithNoCredentials"/>
           <include name="verifyLoginWithValidCredentials"/>
           <include name="tearDown"/>
-          <include name="verifyLoginWithInvalidEmailidValidPassword"/>
-          <include name="verifyLoginWithValidEmailidInValidPassword"/>
         </methods>
       </class> <!-- com.qa.ninjatutorials.testcases.LoginTest -->
     </classes>
